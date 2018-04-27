@@ -1,10 +1,31 @@
+<!DOCTYPE html>
 <html>
-<head>
-  <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
-  <title>ti</title>
-  <script type="text/ruby" charset="utf-8">
-    dirs = `ls`
-  </script>
-  <iframe src="https://kart.gulesider.no/m/neuST?embed=true&center=58.14973802296149,7.996931076049805&zoom=14&layer=map" width="600" height="450" frameborder="0" style="border:0"></iframe>
-</head>
+  <head>
+    <style>
+      #map {
+        height: 400px;
+        width: 100%;
+       }
+    </style>
+  </head>
+  <body>
+    <h3>My Google Maps Demo</h3>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=@58.1885204,7.933746,14.56z&callback=initMap">
+    </script>
+  </body>
 </html>
