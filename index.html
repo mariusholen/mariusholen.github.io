@@ -55,6 +55,8 @@
                               'Error: Your browser doesn\'t support geolocation.');
         infoWindow.open(map);
       }
+      
+      map.data.loadGeoJson('data.json');
     </script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAg_NsYhKKX_8CkbFH0_Gw1_IT4XrXXqiQ&callback=initMap">
