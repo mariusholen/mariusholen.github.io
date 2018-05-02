@@ -1,3 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Geolocation</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 400px;
+       width: 50%;
+      }
+</style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+      // Note: This example requires that you consent to location sharing when
+      // prompted by your browser. If you see the error "The Geolocation service
+      // failed.", it means you probably did not give permission for the browser to
+      // locate you.
+      var map, infoWindow;
 function initMap() {
 
   // Create the map.
@@ -13,14 +36,13 @@ function initMap() {
   // Show the information for a store when its marker is clicked.
   map.data.addListener('click', event => {
 
-    let name = event.feature.getProperty('name');
-    let description = event.feature.getProperty('description');
-    let hours = event.feature.getProperty('hours');
-    let phone = event.feature.getProperty('phone');
-    let position = event.feature.getGeometry().get();
+    let name = event.feature.getProperty('Navn');
+   // let description = event.feature.getProperty('description');
+   // let hours = event.feature.getProperty('hours');
+   // let phone = event.feature.getProperty('phone');
+   // let position = event.feature.getGeometry().get();
     let content = `
-      <h2>${name}</h2><p>${description}</p>
-      <p><b>Open:</b> ${hours}<br/><b>Phone:</b> ${phone}</p>
+      <h2>${name}</h2>
     `
     infoWindow.setContent(content);
     infoWindow.setPosition(position);
@@ -28,3 +50,9 @@ function initMap() {
     infoWindow.open(map);
   });
 }
+ </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAg_NsYhKKX_8CkbFH0_Gw1_IT4XrXXqiQ&callback=initMap">
+    </script>
+  </body>
+</html>
