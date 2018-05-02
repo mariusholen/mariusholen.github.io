@@ -1,95 +1,46 @@
 {
-  "type": "FeatureCollection",
+  "type": "FeatureCollection", 
   "features": [
     {
-      "type": "Feature",
-      "properties": {
-        "Navn": "Coop Extra Lund"
-      },
       "geometry": {
-        "type": "Point",
+        "type": "Point", 
         "coordinates": [
-          8.024654388427734,
-          58.15057593272962
+          8.024654,
+          58.15057
         ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+      "category": "Dagligvarebutikk", 
+        "name": "Coop Extra Lund", 
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "Navn": "Coop Mega Lund"
-      },
       "geometry": {
-        "type": "Point",
+        "type": "Point", 
         "coordinates": [
-          8.0245041847229,
-          58.15358771576938
+          8.0245041,
+          58.153587
         ]
+      }, 
+      "type": "Feature", 
+      "properties": {
+        "category": "Dagligvarebutikk", 
+        "name": "Coop Mega Lund", 
       }
     },
     {
-      "type": "Feature",
-      "properties": {
-        "Navn": "Coop Prix Gimlevang"
-      },
       "geometry": {
-        "type": "Point",
+        "type": "Point", 
         "coordinates": [
-          7.998647689819337,
-          58.16073118929848
+          7.9986476,
+          58.160731
         ]
-      }
-    },
-    {
-      "type": "Feature",
+      }, 
+      "type": "Feature", 
       "properties": {
-        "Navn": "Joker Gimlemoen"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          8.008346557617188,
-          58.162406471512845
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Navn": "Kiwi Lund"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          8.024353981018066,
-          58.15292820236808
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Navn": "Rema 1000 Lund"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          8.026403188705444,
-          58.15034381105292
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Navn": "Spar Lund Torv"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          8.009199500083923,
-          58.151736518406615
-        ]
+        "category": "Dagligvarebutikk", 
+        "name": "Coop Prix Gimlevang", 
       }
     }
   ]
