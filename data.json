@@ -4,10 +4,7 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Dagligvarebutikk",
-        "hours": "07:00 - 23:00",
-        "description": "Dagligvarebutikk på lund",
-        "name": "Coop Extra Lund"
+        "Navn": "Coop Extra Lund"
       },
       "geometry": {
         "type": "Point",
