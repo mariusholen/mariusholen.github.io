@@ -1,47 +1,3 @@
-/*
-{
-  "type": "FeatureCollection", 
-  "features": [
-    {
-      "geometry": {
-        "type": "Point", 
-        "coordinates": [
-          -0.145365,
-          51.506182
-        ]
-      }, 
-      "type": "Feature", 
-      "properties": {
-      "category": "patisserie", 
-        "hours": "10am - 6pm", 
-        "description": "Modern twists on classic pastries. We're part of a larger chain of patisseries and cafes.", 
-        "name": "Josie's Patisserie Mayfair", 
-        "phone": "+44 20 1234 5678"
-      }
-    },
-    {
-      "geometry": {
-        "type": "Point", 
-        "coordinates": [
-          -2.579623,
-          51.452251
-        ]
-      }, 
-      "type": "Feature", 
-      "properties": {
-        "category": "patisserie", 
-        "hours": "10am - 6pm", 
-        "description": "Come and try our award-winning cakes and pastries. We're part of a larger chain of patisseries and cafes.", 
-        "name": "Josie's Patisserie Bristol", 
-        "phone": "+44 117 121 2121"
-      }
-    },
-
-*/
-
-
-
-
 {
   "type": "FeatureCollection",
   "features": [
@@ -61,7 +17,7 @@
         ]
       }
     },
- /*   {
+    {
       "type": "Feature",
       "properties": {
         "Navn": "Coop Mega Lund"
@@ -138,6 +94,6 @@
           58.151736518406615
         ]
       }
-    }*/
+    }
   ]
 }
