@@ -36,13 +36,13 @@ function initMap() {
   // Show the information for a store when its marker is clicked.
   map.data.addListener('click', event => {
 
-    let name = event.feature.getProperty('Navn');
-   // let description = event.feature.getProperty('description');
+    let name = event.feature.getProperty('name');
+    let description = event.feature.getProperty('description');
    // let hours = event.feature.getProperty('hours');
    // let phone = event.feature.getProperty('phone');
    // let position = event.feature.getGeometry().get();
     let content = `
-      <h2>${name}</h2>
+       <h2>${name}</h2><p>${description}</p>
     `
     infoWindow.setContent(content);
     infoWindow.setPosition(position);
