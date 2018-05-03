@@ -13,9 +13,9 @@ function initMap() {
   
   map.data.addListener('click', event => {
 
-    let name = event.feature.getProperty('name');
+    let Navn = event.feature.getProperty('Navn');
     let position = event.feature.getGeometry().get();
-    let content = `<h2>${name}</h2>`
+    let content = `<h2>${Navn}</h2>`
     
     infoWindow.setContent(content);
     infoWindow.setPosition(position);
