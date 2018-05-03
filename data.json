@@ -1,46 +1,95 @@
 {
-  "type": "FeatureCollection", 
+  "type": "FeatureCollection",
   "features": [
     {
-      "geometry": {
-        "type": "Point", 
-        "coordinates": [
-          8.024654,
-          58.15057
-        ]
-      }, 
-      "type": "Feature", 
+      "type": "Feature",
       "properties": {
-      "category": "Dagligvarebutikk", 
-        "name": "Coop Extra Lund", 
+        "Navn": "Coop Extra Lund"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.024654388427734,
+          58.15057593272962
+        ]
       }
     },
     {
-      "geometry": {
-        "type": "Point", 
-        "coordinates": [
-          8.0245041,
-          58.153587
-        ]
-      }, 
-      "type": "Feature", 
+      "type": "Feature",
       "properties": {
-        "category": "Dagligvarebutikk", 
-        "name": "Coop Mega Lund", 
+        "Navn": "Coop Mega Lund"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.0245041847229,
+          58.15358771576938
+        ]
       }
     },
     {
-      "geometry": {
-        "type": "Point", 
-        "coordinates": [
-          7.9986476,
-          58.160731
-        ]
-      }, 
-      "type": "Feature", 
+      "type": "Feature",
       "properties": {
-        "category": "Dagligvarebutikk", 
-        "name": "Coop Prix Gimlevang", 
+        "Navn": "Coop Prix Gimlevang"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.998647689819337,
+          58.16073118929848
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Navn": "Joker Gimlemoen"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.008346557617188,
+          58.162406471512845
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Navn": "Kiwi Lund"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.024353981018066,
+          58.15292820236808
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Navn": "Rema 1000 Lund"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.026403188705444,
+          58.15034381105292
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Navn": "Spar Lund Torv"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.009199500083923,
+          58.151736518406615
+        ]
       }
     }
   ]
