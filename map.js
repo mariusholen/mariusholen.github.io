@@ -1,6 +1,5 @@
 var map;
-      var infoWindow;
-      var infowindow;
+var infoWindow;
 
      function initMap() {
            
@@ -18,13 +17,11 @@ var map;
         lng: position.coords.longitude
       };
       
-
-     infoWindow.setPosition(pos);
+      infoWindow.setPosition(pos);
       infoWindow.setContent('Location found');
       infoWindow.open(map);
       map.setCenter(pos);
       
-      infowindow = new google.maps.InfoWindow();
         var service = new google.maps.places.PlacesService(map);
         service.nearbySearch({
           location: pos,
@@ -66,7 +63,7 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
         });
 
        google.maps.event.addListener(marker, 'click', function() {
-          infowindow.setContent(place.name);
-          infowindow.open(map, this);
+          infoWindow.setContent(place.name);
+          infoWindow.open(map, this);
         });
       }
