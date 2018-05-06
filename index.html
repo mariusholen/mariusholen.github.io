@@ -1,29 +1,18 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Store Locator</title>
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-    <meta charset="utf-8">
-    <style>
-      /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-      #map {
-        height: 400px;
-        width: 50%
-      }
-      /* Optional: Makes the sample page fill the window. */
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-    </style>
-  </head>
-   <body>
-    <div class="map"></div>
-     <script src="map.js"></script>
-     <script async defer
-       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&libraries=places&callback=initMap">
-     </script>
-   </body>
+<head>
+  <title>Store Locator</title>
+  <style>
+    .map {height: 400px; width: 50%}
+    html, body {height: 100%; margin: 0; padding: 0;}
+  </style>
+<head>
+<body>
+  <div class="map"></div>
+
+  <script src="map.js"></script>
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAg_NsYhKKX_8CkbFH0_Gw1_IT4XrXXqiQ&libraries=places&callback=initMap">
+  </script>
+</body>
 </html>
