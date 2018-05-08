@@ -20,9 +20,6 @@
     <script>
         var map;
       var infoWindow;
-      var infowindow;
-      //var posLat;
-      //var posLng;
     
      function initMap() {
       
@@ -34,8 +31,6 @@
         lng: position.coords.longitude
       };
       
-     //posLat = location.getLattitude;
-      //posLng = location.getLongitude;
      infoWindow.setPosition(pos);
       infoWindow.setContent('Location found.');
       infoWindow.open(map);
@@ -44,9 +39,7 @@
       infowindow = new google.maps.InfoWindow();
         var service = new google.maps.places.PlacesService(map);
         service.nearbySearch({
-          location: (pos),//(getPosition(pos)),
-         // pos,
-          //{lat: 58.152, lng: 8.009},
+          location: (pos),
           radius: 500,
           keyword: ['matbutikk']
         }, callback);
@@ -71,12 +64,7 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
                         'Error: The Geolocation service failed.' :
                         'Error: Your browser doesn\'t support geolocation.');
   infoWindow.open(map);
-  }
-  
-// var infowindow = new google.maps.InfoWindow({
-  //        content: marker.getPosition()});
-        
-       
+  } 
 }
       function callback(results, status) {
         if (status === google.maps.places.PlacesServiceStatus.OK) {
@@ -92,8 +80,8 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
           position: place.geometry.location
         });
        google.maps.event.addListener(marker, 'click', function() {
-          infowindow.setContent(place.name);
-          infowindow.open(map, this);
+          infoWindow.setContent(place.name);
+          infoWindow.open(map, this);
         });
       }
     </script>
