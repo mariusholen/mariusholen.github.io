@@ -142,6 +142,11 @@
             var li = document.createElement('li');
             li.textContent = place.name;
             placesList.appendChild(li);
+            li.onclick = function() {
+          infoWindow.setContent(place.name);
+          infoWindow.setPosition(placeLoc);
+          infoWindow.open(map, this);
+        };
         }
     </script>
 </head>
